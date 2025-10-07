@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system: all colors must be HSL and referenced via tokens. */
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 0 0% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Brand (acid lime) */
+    --primary: 75 85% 60%;
+    --primary-foreground: 240 6% 10%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 215 20% 70%;
+
+    --accent: 75 85% 60%;
+    --accent-foreground: 240 6% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 6% 18%;
+    --input: 240 6% 18%;
+    --ring: 75 85% 60%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 75 85% 60%;
+    --sidebar-primary-foreground: 240 6% 10%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 240 6% 18%;
+    --sidebar-ring: 75 85% 60%;
+
+    /* Typography variables */
+    --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --font-display: 'Bebas Neue', ui-sans-serif, system-ui;
+  }
+
+  .dark {
+    /* Mirror dark values so toggling doesn't break */
+    --background: 0 0% 6%;
+    --foreground: 210 40% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 75 85% 60%;
+    --primary-foreground: 240 6% 10%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 215 20% 70%;
+    --accent: 75 85% 60%;
+    --accent-foreground: 240 6% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 6% 18%;
+    --input: 240 6% 18%;
+    --ring: 75 85% 60%;
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 75 85% 60%;
+    --sidebar-primary-foreground: 240 6% 10%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 240 6% 18%;
+    --sidebar-ring: 75 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
