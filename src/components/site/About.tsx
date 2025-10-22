@@ -5,7 +5,7 @@ const About = () => {
         <div>
           <h2 className="font-display text-4xl md:text-5xl mb-4">Sobre mí</h2>
          <p className="text-muted-foreground leading-relaxed">
-Soy una desarrolladora Junior en constante aprendizaje, con interés en el desarrollo Full Stack y motivación por adquirir experiencia práctica. Mi objetivo es crecer profesionalmente mientras contribuyo con soluciones funcionales y bien estructuradas.
+  Desarrolladora Junior en constante aprendizaje, con interés en el desarrollo Full Stack y en la creación de experiencias digitales que aporten valor. Me motiva seguir ampliando mis conocimientos y enfrentar nuevos desafíos que me permitan crecer tanto técnica como profesionalmente.
 </p>
         </div>
         <div className="flex flex-wrap gap-2">

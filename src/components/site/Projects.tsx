@@ -4,7 +4,7 @@ import { Github, Link as LinkIcon } from "lucide-react";
 const projects = [
   {
     title: "Roomverse",
-    image: "src/assets/hero-portrait.jpg",
+    image: "src/assets/room.png",
     code: "https://github.com/MaryangelaJaimes/RoomVerse.git",
     live: "https://roomverse.netlify.app/",
   },
@@ -36,9 +36,16 @@ const Projects = () => {
         <ul className="grid gap-8 md:grid-cols-2">
           {projects.map((p) => (
             <li key={p.title} className="group rounded-xl overflow-hidden border border-border bg-secondary">
-              <div className="aspect-[16/9] overflow-hidden">
-                <img src={p.image} alt={`Previsualización de ${p.title}`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy" />
-              </div>
+            <div className="relative w-full h-72 md:h-80 lg:h-96 overflow-hidden">
+  <img
+    src={p.image}
+    alt={`Previsualización de ${p.title}`}
+    className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 ease-in-out group-hover:scale-[1.04]"
+    loading="lazy"
+  />
+</div>
+
+
               <div className="p-5 flex items-center justify-between">
                 <h3 className="font-semibold text-lg">{p.title}</h3>
                 <div className="flex gap-2">
