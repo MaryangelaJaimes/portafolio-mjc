@@ -1,16 +1,16 @@
-import hero from "@/assets/hero-portrait.jpg";
-import rym from "@/assets/rickandmorty.png";
-import pokedex from "@/assets/pokedex.png";
-import tech from "@/assets/tech.png";
 import { Button } from "@/components/ui/button";
 import { Github, Link as LinkIcon } from "lucide-react";
 
 
+import room from "@/assets/room.png";
+import rym from "@/assets/rickandmorty.png";
+import pokedex from "@/assets/pokedex.png";
+import tech from "@/assets/tech.png";
 
 const projects = [
   {
     title: "Roomverse",
-    image: hero,
+    image: room,
     code: "https://github.com/MaryangelaJaimes/RoomVerse.git",
     live: "https://roomverse.netlify.app/",
   },
@@ -34,7 +34,6 @@ const projects = [
   },
 ];
 
-
 const Projects = () => {
   return (
     <section id="PROJECTS" className="py-16 md:py-24">
@@ -42,28 +41,38 @@ const Projects = () => {
         <h2 className="font-display text-4xl md:text-5xl mb-10">Proyectos</h2>
         <ul className="grid gap-8 md:grid-cols-2">
           {projects.map((p) => (
-            <li key={p.title} className="group rounded-xl overflow-hidden border border-border bg-secondary">
-            <div className="relative w-full h-72 md:h-80 lg:h-96 overflow-hidden">
-  <img
-    src={p.image}
-    alt={`Previsualización de ${p.title}`}
-    className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 ease-in-out group-hover:scale-[1.04]"
-    loading="lazy"
-  />
-</div>
-
+            <li
+              key={p.title}
+              className="group rounded-xl overflow-hidden border border-border bg-secondary"
+            >
+              <div className="aspect-[16/9] overflow-hidden relative">
+                <img
+                  src={p.image}
+                  alt={`Previsualización de ${p.title}`}
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  loading="lazy"
+                />
+              </div>
 
               <div className="p-5 flex items-center justify-between">
                 <h3 className="font-semibold text-lg">{p.title}</h3>
                 <div className="flex gap-2">
                   <a href={p.code} target="_blank" rel="noreferrer">
-                    <Button variant="outline" size="sm" aria-label={`Código de ${p.title}`}>
-                      <Github className="mr-1"/> Código
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      aria-label={`Código de ${p.title}`}
+                    >
+                      <Github className="mr-1" /> Código
                     </Button>
                   </a>
                   <a href={p.live} target="_blank" rel="noreferrer">
-                    <Button variant="hero" size="sm" aria-label={`Web de ${p.title}`}>
-                      <LinkIcon className="mr-1"/> Web
+                    <Button
+                      variant="hero"
+                      size="sm"
+                      aria-label={`Web de ${p.title}`}
+                    >
+                      <LinkIcon className="mr-1" /> Web
                     </Button>
                   </a>
                 </div>
