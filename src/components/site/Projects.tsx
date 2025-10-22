@@ -4,25 +4,25 @@ import { Github, Link as LinkIcon } from "lucide-react";
 const projects = [
   {
     title: "Roomverse",
-    image: "src/assets/room.png",
+    image: "/src/assets/room.png",
     code: "https://github.com/MaryangelaJaimes/RoomVerse.git",
     live: "https://roomverse.netlify.app/",
   },
   {
     title: "Rick and Morty",
-    image: "src/assets/rickandmorty.png",
+    image: "/src/assets/rickandmorty.png",
     code: "https://github.com/MaryangelaJaimes/api-react.git",
     live: "https://router-pokedex.netlify.app/",
   },
   {
     title: "Pokémon Collection",
-    image: "src/assets/pokedex.png",
+    image: "/src/assets/pokedex.png",
     code: "https://github.com/MaryangelaJaimes/router-pokedex.git",
     live: "https://pokeddx.netlify.app/",
   },
   {
     title: "marketplace digital",
-    image: "src/assets/tech.png",
+    image: "/src/assets/tech.png",
     code: "https://github.com/MaryangelaJaimes/marketplace2.git",
     live: "https://marketplacce.netlify.app/", 
   },
