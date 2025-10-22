@@ -1,32 +1,39 @@
+import hero from "@/assets/hero-portrait.jpg";
+import rym from "@/assets/rickandmorty.png";
+import pokedex from "@/assets/pokedex.png";
+import tech from "@/assets/tech.png";
 import { Button } from "@/components/ui/button";
 import { Github, Link as LinkIcon } from "lucide-react";
+
+
 
 const projects = [
   {
     title: "Roomverse",
-    image: "/src/assets/room.png",
+    image: hero,
     code: "https://github.com/MaryangelaJaimes/RoomVerse.git",
     live: "https://roomverse.netlify.app/",
   },
   {
     title: "Rick and Morty",
-    image: "/src/assets/rickandmorty.png",
+    image: rym,
     code: "https://github.com/MaryangelaJaimes/api-react.git",
     live: "https://router-pokedex.netlify.app/",
   },
   {
     title: "Pokémon Collection",
-    image: "/src/assets/pokedex.png",
+    image: pokedex,
     code: "https://github.com/MaryangelaJaimes/router-pokedex.git",
     live: "https://pokeddx.netlify.app/",
   },
   {
     title: "marketplace digital",
-    image: "/src/assets/tech.png",
+    image: tech,
     code: "https://github.com/MaryangelaJaimes/marketplace2.git",
-    live: "https://marketplacce.netlify.app/", 
+    live: "https://marketplacce.netlify.app/",
   },
 ];
+
 
 const Projects = () => {
   return (
